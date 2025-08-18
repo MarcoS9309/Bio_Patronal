@@ -1,4 +1,3 @@
-
 # La Leyenda del Urku Yaya
 ## *El Abuelo de la Montaña*
 
