@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chatbot Comunitario</title>
+    <style>
+      :root {
+        --bg: #f8f9fb;
+        --panel: #ffffff;
+        --border: #e5e7eb;
+        --text: #0f172a;
+        --muted: #6b7280;
+        --primary: #0ea5e9;
+        --primary-700: #0369a1;
+        --accent: #10b981;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Noto Sans', 'Helvetica Neue', Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+        background: var(--bg); color: var(--text);
+      }
+      .app {
+        max-width: 840px; margin: 24px auto; padding: 16px;
+      }
+      header {
+        display: flex; align-items: center; gap: 12px; margin-bottom: 12px;
+      }
+      header .logo {
+        width: 40px; height: 40px; border-radius: 10px; background: linear-gradient(135deg, var(--primary), var(--accent));
+      }
+      header h1 { font-size: 1.2rem; margin: 0; }
+      header p { margin: 0; color: var(--muted); font-size: .9rem; }
+
+      .chat {
+        background: var(--panel); border: 1px solid var(--border); border-radius: 12px; overflow: hidden;
+        display: grid; grid-template-rows: auto 1fr auto; min-height: 520px;
+      }
+      .suggestions {
+        display: flex; gap: 8px; flex-wrap: wrap; padding: 12px; border-bottom: 1px solid var(--border); background: #fafafa;
+      }
+      .suggestions button {
+        border: 1px solid var(--border); background: #fff; color: var(--text); padding: 8px 10px; border-radius: 999px; cursor: pointer; font-size: .9rem;
+      }
+      .suggestions button:hover { border-color: var(--primary); }
+
+      .messages { padding: 16px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
+      .msg { display: flex; gap: 8px; align-items: flex-start; }
+      .msg .bubble {
+        max-width: 80%; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--border); background: #fff; line-height: 1.35;
+        white-space: pre-wrap;
+      }
+      .msg.user { justify-content: flex-end; }
+      .msg.user .bubble { background: #e6f4ff; border-color: #cfe8ff; }
+      .msg.bot .avatar {
+        width: 28px; height: 28px; border-radius: 6px; background: linear-gradient(135deg, var(--primary), var(--accent)); flex: 0 0 auto; margin-top: 4px;
+      }
+      .msg.user .avatar { display: none; }
+
+      .input {
+        display: grid; grid-template-columns: 1fr auto; gap: 8px; padding: 12px; border-top: 1px solid var(--border); background: #fafafa;
+      }
+      .input input {
+        width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--border); font-size: 1rem;
+      }
+      .input button {
+        padding: 12px 16px; border-radius: 10px; border: 1px solid var(--primary); background: var(--primary); color: #fff; font-weight: 600; cursor: pointer;
+      }
+      .input button:hover { background: var(--primary-700); border-color: var(--primary-700); }
+
+      footer { text-align: center; color: var(--muted); font-size: .85rem; margin-top: 10px; }
+      footer a { color: var(--primary-700); text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Chatbot Comunitario — Jerusalén / Patacorral</h1>
+          <p>Guía básica sobre nuestras leyendas y memoria colectiva</p>
+        </div>
+      </header>
+
+      <section class="chat">
+        <div class="suggestions" id="suggestions"></div>
+        <div class="messages" id="messages" aria-live="polite"></div>
+        <div class="input">
+          <input id="prompt" type="text" placeholder="Escribe tu pregunta... (Ej.: ¿Quién es el Urku Yaya?)" autocomplete="off" />
+          <button id="send">Enviar</button>
+        </div>
+      </section>
+
+      <footer>
+        <span>Este bot es una guía cultural basada en contenido del proyecto. No ofrece respuestas oficiales ni religiosas.</span>
+      </footer>
+    </div>
+
+    <script src="./chatbot.js"></script>
+  </body>
+  </html>

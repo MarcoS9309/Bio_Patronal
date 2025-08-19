@@ -92,6 +92,8 @@ He llegado a pensar que esa aparente incoherencia no es un error, sino **la úni
 # El Señor de Jerusalén
 ## *El Cimiento de Nuestra Fe Comunitaria*
 
+### Introducción
+
 ## La Fe que Trasciende
 
 Y al sumergirme en ese llamado de la piedra, emerge en mi memoria, como un arroyo que brota de la misma roca, otra figura que nos define: **El Señor de Jerusalén**. He escuchado incontables relatos en mi vida, pero el suyo me parece el más inspirador, porque no se detiene en el mito; se convierte en el origen de nuestra creencia comunitaria, en el cimiento invisible de nuestros valores y nuestra integridad. 
@@ -116,6 +118,8 @@ La gente más joven quizá no lo sepa, pero el nombre de nuestra parroquia, **Je
 
 Querían que el mundo supiera que este pedacito de tierra era una **Nueva Jerusalén**, un lugar de fe. La parroquia surgió de ese compromiso: de una unión que buscaba futuro sin olvidar el alma del pasado.
 
+### Nudo
+
 ## La imagen hallada en la vertiente
 
 Nadie sabe a ciencia cierta cómo llegó la imagen del Señor a Patacorral. La historia escrita calla; por eso habla la memoria. Mi abuelo contaba lo que a él le contó su abuelo, con respeto y en susurros. Esta es la crónica del hallazgo:
@@ -125,6 +129,8 @@ Nadie sabe a ciencia cierta cómo llegó la imagen del Señor a Patacorral. La h
 - Al día siguiente, la imagen ya no estaba.
 - Alguien propuso volver a la vertiente: allí estaba de nuevo, en el mismo sitio, mirando hacia las casas de Patacorral.
 
+### Desenlace
+
 ## El mensaje para la comunidad
 
 El pueblo entendió el signo: el Señor no quería un altar impuesto, sino el lugar que Él mismo había elegido como hogar. Por eso la devoción aquí es distinta, íntima y cercana. No es la fe en un santo que trajeron, sino en Uno que decidió quedarse con nosotros. Implica:
@@ -132,6 +138,53 @@ El pueblo entendió el signo: el Señor no quería un altar impuesto, sino el lu
 - **Elección libre del lugar**: la sacralidad brota de la aparición y del arraigo.
 - **Fe encarnada en la vida cotidiana**: manantiales, sembríos, caminantes.
 - **Devoción comunitaria**: una casa construida por todos sobre la tierra del Padre Rumi.
+
+## Extractos del pensamiento colectivo
+
+> En esos tiempos duros, cuando el sol rajaba la tierra y la tristeza se sentía en el aire, un hombre llamado Juan caminaba por la quebrada seca. Andaba con el corazón encogido, como todos en el pueblo. De repente, su pie golpeó algo duro bajo el polvo.
+>
+> Se agachó y con sus manos empezó a sacar una piedra. No era una piedra cualquiera. Tenía una forma rara, como de cabeza, pero también como de un corazón. Le quitó el lodo que tenía encima y, poco a poco, apareció un dibujo con colores que parecían vivos.
+>
+> Con la piedra en brazos, corrió al pueblo. La gente se fue juntando a su alrededor. Manuel, el más viejo de todos, la miró con los ojos muy abiertos. “Es él”, dijo con la voz bajita, “es el Señor de Jerusalén que ha venido a vernos”.
+>
+> Esa misma tarde, pusieron la piedra sobre un paño limpio y todo el pueblo se juntó a rezar. Mientras susurraban sus ruegos, Manuel juntó sus manos y dijo para todos: “Que nuestra fe sea la llave. Como el buen San Pedro que abre las puertas del cielo, que nuestra fe abra las nubes”. Creían con tanta fuerza, que su fe se convirtió en esa llave.
+>
+> Y entonces pasó. Una gota de agua, gorda y lenta, cayó justo sobre la piedra. Después otra, y otra más, hasta que un aguacero bueno y fuerte se soltó del cielo, mojando la tierra y las caras felices de la gente. Su fe, construida sobre esa roca, sobre su propio Pedro, había abierto los cielos.
+>
+> Los días que siguieron fueron de alegría y asombro. Viendo cómo los campos volvían a la vida, León, el que trabajaba la madera, se quedó mirando la piedra largo rato. La tocó con respeto y les dijo a los demás: “¿Se dan cuenta? Esta piedra ahora es el centro de nuestro mundo. Miren la cruz pintada: es como una escalera que une nuestra tierra con el cielo. Es el punto exacto donde Dios nos escucha más de cerca”.
+>
+> Y así lo sintieron todos. Entendieron que el verde pintado era el verde de sus campos, el azul era su fe, y las personitas rojas de abajo eran sus abuelos, su sangre, su raíz.
+>
+> Por eso, ya nadie pensaba en irse a la ciudad. ¿Para qué? Aquí estaba el centro de todo, el lugar que los unía con lo sagrado. Su pueblo era el lugar donde el cielo y la tierra se abrazaban. El Señor de Jerusalén era el corazón de piedra, y su gente, el latido que lo mantenía vivo.
+
+---
+
+# La Casa de los Abuelos
+## *El ancla de la familia en las colinas de Biblián*
+
+### Introducción
+
+La casa de los abuelos. Así la llamaba Mateo, aunque ya nadie vivía en ella. Se alzaba sobre sus zancos de madera, como un viejo animal cansado, mirando hacia las colinas verdes y ondulantes de Biblián. El cielo, cargado de nubes grises, parecía llorar por ella.
+
+## Ecos del Pasado
+
+Cada vez que regresaba de la ciudad, Mateo sentía la necesidad de caminar por el campo de hierba alta hasta llegar a este punto. Se detenía y simplemente la observaba. Podía escuchar el eco de las risas de su infancia, el crujido de las escaleras de madera bajo los pies de su abuela Inés y el sonido de la lluvia golpeando las tejas de barro, un sonido que era la nana de todas sus siestas.
+
+La pared, una mezcla de bahareque y madera que ahora se desmoronaba, guardaba más historias que cualquier libro. Recordaba el olor a tierra húmeda y a leña quemada que siempre impregnaba el aire. En la abertura del segundo piso, como un fantasma en su puesto, aún estaba la pequeña silla donde su abuelo Manuel se sentaba cada tarde. Desde allí, con la mirada perdida en su sembrío de maíz y papas, juzgaba el clima y decidía el trabajo del día siguiente.
+
+### Nudo
+
+## El Consejo de los Vecinos
+
+Los vecinos le habían dicho a Mateo que la derribara. "Ya no sirve, Mateo. Es un peligro", le aconsejaban. Pero para él, no era solo una estructura. Era el ancla de su familia. Su abuelo la había construido con sus propias manos, mezclando el lodo con paja y clavando cada tabla de eucalipto. En esa casa habían nacido sus tíos, había llorado su madre y había soñado él mismo con mundos lejanos que, irónicamente, ahora le parecían vacíos.
+
+Mientras el viento silbaba a través de las tejas rotas, Mateo se imaginó el calor del fogón, el sabor del mote recién cocido y la seguridad de estar bajo ese techo. La casa estaba herida, sí. El tiempo y el abandono la habían golpeado sin piedad. Pero no estaba muerta.
+
+### Desenlace
+
+## La Decisión del Corazón
+
+En el silencio del campo cañari, roto solo por el viento, Mateo tomó una decisión. No iba a dejar que se cayera. No podía. Arreglaría el techo, reforzaría las paredes, cambiaría las tablas podridas. Lo haría él mismo, como lo hizo el abuelo. Porque esa casa no era una ruina; era una raíz. Y un hombre, por muy lejos que viaje, nunca debe olvidar dónde están sus raíces.
 
 ---
 

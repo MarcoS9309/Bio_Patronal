@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="300" viewBox="0 0 420 300" role="img" aria-label="Cruz-escalera y colores simbólicos">
+  <defs>
+    <style>
+      .bg { fill: #f8fafc; }
+      .border { stroke: #cbd5e1; stroke-width: 2; fill: none; }
+      .label { font: 14px system-ui, -apple-system, Segoe UI, Roboto; fill: #0f172a; }
+      .muted { fill: #475569; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="420" height="300" rx="12"/>
+  <rect class="border" x="6" y="6" width="408" height="288" rx="10"/>
+
+  <!-- Tierra (verde) -->
+  <rect x="40" y="220" width="340" height="40" fill="#16a34a" rx="6"/>
+  <text x="210" y="245" text-anchor="middle" class="label" fill="#052e16">Tierra / Campos (Verde)</text>
+
+  <!-- Fe (azul) -->
+  <rect x="320" y="60" width="40" height="160" fill="#0ea5e9" rx="6"/>
+  <text x="340" y="50" text-anchor="middle" class="label">Fe (Azul)</text>
+
+  <!-- Ancestros (rojo) -->
+  <circle cx="80" cy="210" r="10" fill="#ef4444"/>
+  <circle cx="110" cy="210" r="10" fill="#ef4444"/>
+  <circle cx="140" cy="210" r="10" fill="#ef4444"/>
+  <text x="110" y="195" text-anchor="middle" class="label">Ancestros (Rojo)</text>
+
+  <!-- Cruz-escalera (centro) -->
+  <g transform="translate(200, 90)">
+    <!-- Vertical -->
+    <rect x="-10" y="-20" width="20" height="140" fill="#111827" rx="4"/>
+    <!-- Horizontal -->
+    <rect x="-70" y="30" width="140" height="20" fill="#111827" rx="4"/>
+    <!-- Escalones (hacia arriba) -->
+    <rect x="-10" y="-5" width="20" height="8" fill="#f59e0b" rx="2"/>
+    <rect x="-10" y="15" width="20" height="8" fill="#f59e0b" rx="2"/>
+    <rect x="-10" y="35" width="20" height="8" fill="#f59e0b" rx="2"/>
+    <rect x="-10" y="55" width="20" height="8" fill="#f59e0b" rx="2"/>
+  </g>
+
+  <text x="210" y="18" text-anchor="middle" class="label muted">Cruz-escalera: unión cielo-tierra</text>
+</svg>
