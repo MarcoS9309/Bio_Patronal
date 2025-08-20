@@ -7,7 +7,7 @@ Este repositorio contiene una colección de relatos biográficos y leyendas ance
 
 ### 🌄 Contenido Principal
 
-El proyecto explora tres pilares fundamentales de nuestra herencia espiritual y cultural:
+El proyecto explora cuatro pilares fundamentales de nuestra herencia espiritual y cultural:
 
 #### 🏔️ **La Leyenda del Urku Yaya** (*El Abuelo de la Montaña*)
 - Relatos del cazador solitario y guardián de los secretos ancestrales
@@ -27,6 +27,12 @@ El proyecto explora tres pilares fundamentales de nuestra herencia espiritual y 
 - Testimonios de los guardianes de la memoria
 - La fe encarnada en Patacorral y su significado comunitario
 
+#### 🏠 **La Casa de los Abuelos** (*El Ancla de la Familia en las Colinas de Biblián*)
+- Historia de Mateo y la decisión de preservar la memoria familiar
+- El valor sentimental de las estructuras ancestrales
+- La conexión entre lugar, memoria y identidad
+- La resistencia ante la modernización y el olvido
+
 ### 🎯 **Propósito**
 
 Este proyecto no es solo documentación histórica, sino:
@@ -37,8 +43,26 @@ Este proyecto no es solo documentación histórica, sino:
 
 ### 📚 **Navegación**
 
-Para leer el contenido completo, consulta:
-- **[Introducción.md](./Introduccion.md)** - Relatos completos y narrativas detalladas
+#### 🗂️ **Inicio Rápido**
+- **[INDICE.md](./INDICE.md)** - Tabla de contenidos completa con enlaces directos
+- **[CHANGELOG.md](./CHANGELOG.md)** - Historial de cambios y actualizaciones
+
+#### 📖 **Contenido Principal**
+- **[Relato.md](./Relato.md)** - Colección completa de narrativas y leyendas
+  - La Leyenda del Urku Yaya
+  - El Padre Rumi 
+  - El Señor de Jerusalén
+  - La Casa de los Abuelos
+  - Declaración de Propósito
+
+#### 👤 **Testimonios Personales**
+- **[El_relato_de_Mateo.md](./El_relato_de_Mateo.md)** - Testimonio personal sobre el Señor de Jerusalén
+
+#### 🤖 **Herramientas Interactivas**
+- **[Chatbot Comunitario](./chatbot/)** - Guía interactiva para explorar el contenido
+  - Interfaz web amigable
+  - Preguntas frecuentes automatizadas
+  - Exploración guiada de las leyendas
 
 ---
 
