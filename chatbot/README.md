@@ -1,11 +1,12 @@
 # Chatbot Comunitario (estático)
 
-Un chatbot básico (HTML + JS) para guiar a visitantes sobre la comunidad de Jerusalén / Patacorral, basado en contenido de `Introduccion.md`.
+Un chatbot básico (HTML + JS) para guiar a visitantes sobre la comunidad de Jerusalén / Patacorral, basado en contenido de `Relato.md` y `El_relato_de_Mateo.md`.
 
 ## Estructura
 
 - `index.html`: interfaz del chat (UI) lista para abrir en el navegador.
 - `chatbot.js`: lógica simple basada en reglas y palabras clave.
+- `assets/simbolo-cruz-escalera.svg`: símbolo visual de la comunidad.
 
 ## Cómo probar
 
@@ -28,4 +29,5 @@ Un chatbot básico (HTML + JS) para guiar a visitantes sobre la comunidad de Jer
 ## Notas
 
 - Este bot no usa servicios externos ni IA: funciona offline con reglas simples.
-- El conocimiento es un resumen no exhaustivo de `Introduccion.md`. Actualízalo conforme tu contenido crezca.
+- El conocimiento es un resumen no exhaustivo de `Relato.md` y `El_relato_de_Mateo.md`. Actualízalo conforme tu contenido crezca.
+- Incluye preguntas sobre las cuatro historias principales: Urku Yaya, Padre Rumi, Señor de Jerusalén y Casa de los Abuelos.
