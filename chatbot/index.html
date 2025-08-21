@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self';" />
     <title>Chatbot Comunitario</title>
     <style>
       :root {
@@ -86,7 +87,7 @@
         <div class="suggestions" id="suggestions"></div>
         <div class="messages" id="messages" aria-live="polite"></div>
         <div class="input">
-          <input id="prompt" type="text" placeholder="Escribe tu pregunta... (Ej.: ¿Quién es el Urku Yaya?)" autocomplete="off" />
+          <input id="prompt" type="text" placeholder="Escribe tu pregunta... (Ej.: ¿Quién es el Urku Yaya?)" autocomplete="off" maxlength="1000" />
           <button id="send">Enviar</button>
         </div>
       </section>

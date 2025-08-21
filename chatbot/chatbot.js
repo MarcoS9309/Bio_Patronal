@@ -101,8 +101,21 @@ function normalize(text) {
     .trim();
 }
 
+function sanitizeInput(input) {
+  // Remove any potentially dangerous characters
+  return input
+    .replace(/<[^>]*>/g, '') // Remove HTML tags
+    .replace(/javascript:/gi, '') // Remove javascript: protocol
+    .replace(/data:/gi, '') // Remove data: protocol
+    .replace(/vbscript:/gi, '') // Remove vbscript: protocol
+    .trim();
+}
+
 function findAnswer(input) {
-  const qn = normalize(input);
+  // Sanitize input before processing
+  const sanitizedInput = sanitizeInput(input);
+  const qn = normalize(sanitizedInput);
+  
   // Match by tag presence and simple keyword score
   let best = { score: 0, item: null };
   for (const item of knowledge) {
@@ -122,7 +135,38 @@ Prueba con una de las sugerencias arriba.`;
 
 function el(id) { return document.getElementById(id); }
 
-function addMessage(role, text, isHtml = false) {
+// Sanitize HTML content to prevent XSS attacks
+function sanitizeHtml(html) {
+  const tempDiv = document.createElement('div');
+  tempDiv.textContent = html;
+  return tempDiv.innerHTML;
+}
+
+// Safe function to create image element for symbol display
+function createSymbolImage() {
+  const figure = document.createElement('figure');
+  figure.style.margin = '0';
+  
+  const img = document.createElement('img');
+  img.src = './assets/simbolo-cruz-escalera.svg';
+  img.alt = 'Símbolo: cruz-escalera y colores';
+  img.style.maxWidth = '100%';
+  img.style.height = 'auto';
+  img.style.borderRadius = '8px';
+  img.style.border = '1px solid #e5e7eb';
+  
+  const figcaption = document.createElement('figcaption');
+  figcaption.style.color = '#6b7280';
+  figcaption.style.fontSize = '.9rem';
+  figcaption.style.marginTop = '6px';
+  figcaption.textContent = 'Cruz-escalera (unión cielo-tierra). Verde: campos; Azul: fe; Rojo: ancestros.';
+  
+  figure.appendChild(img);
+  figure.appendChild(figcaption);
+  return figure;
+}
+
+function addMessage(role, text, isSymbol = false) {
   const wrap = document.createElement('div');
   wrap.className = `msg ${role}`;
   if (role === 'bot') {
@@ -138,11 +182,15 @@ function addMessage(role, text, isHtml = false) {
   }
   const bubble = document.createElement('div');
   bubble.className = 'bubble';
-  if (isHtml) {
-    bubble.innerHTML = text;
+  
+  if (isSymbol) {
+    // Safely append the symbol image
+    bubble.appendChild(createSymbolImage());
   } else {
+    // Always use textContent to prevent XSS
     bubble.textContent = text;
   }
+  
   wrap.appendChild(bubble);
   el('messages').appendChild(wrap);
   el('messages').scrollTop = el('messages').scrollHeight;
@@ -165,7 +213,14 @@ function renderSuggestions() {
 function send() {
   const input = el('prompt');
   const text = input.value.trim();
+  
+  // Input validation: limit length and check for potentially dangerous content
   if (!text) return;
+  if (text.length > 1000) {
+    addMessage('bot', 'Por favor, escribe una pregunta más corta (máximo 1000 caracteres).');
+    return;
+  }
+  
   addMessage('user', text);
   input.value = '';
 
@@ -173,14 +228,7 @@ function send() {
   setTimeout(() => {
     // Comando para mostrar imagen simbólica
     if (/^muestra el simbolo|muestra el símbolo|ver simbolo|ver símbolo/i.test(text)) {
-      const imgHtml = `
-        <figure style="margin:0;">
-          <img src="./assets/simbolo-cruz-escalera.svg" alt="Símbolo: cruz-escalera y colores" style="max-width:100%;height:auto;border-radius:8px;border:1px solid #e5e7eb;" />
-          <figcaption style="color:#6b7280;font-size:.9rem;margin-top:6px;">
-            Cruz-escalera (unión cielo-tierra). Verde: campos; Azul: fe; Rojo: ancestros.
-          </figcaption>
-        </figure>`;
-      addMessage('bot', imgHtml, true);
+      addMessage('bot', '', true); // true indicates symbol display
     } else {
       const ans = findAnswer(text);
       addMessage('bot', ans);
