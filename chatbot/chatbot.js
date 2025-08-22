@@ -1,5 +1,5 @@
 // Chatbot comunitario sencillo basado en reglas
-// Fuente de conocimiento: resumida desde Introduccion.md
+// Fuente de conocimiento: resumida desde Relato.md y El_relato_de_Mateo.md
 
 const knowledge = [
   {
