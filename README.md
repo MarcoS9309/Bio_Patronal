@@ -60,9 +60,10 @@ Este proyecto no es solo documentación histórica, sino:
 
 #### 🤖 **Herramientas Interactivas**
 - **[Chatbot Comunitario](./chatbot/)** - Guía interactiva para explorar el contenido
-  - Interfaz web amigable
+  - Interfaz web amigable con navegación por teclado
   - Preguntas frecuentes automatizadas
   - Exploración guiada de las leyendas
+  - **🆕 Nuevas funciones**: Atajos de teclado, diseño responsive, mejor accesibilidad
 
 ---
 

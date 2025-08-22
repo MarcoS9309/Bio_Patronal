@@ -42,8 +42,13 @@
       }
       .suggestions button {
         border: 1px solid var(--border); background: #fff; color: var(--text); padding: 8px 10px; border-radius: 999px; cursor: pointer; font-size: .9rem;
+        transition: all 0.2s ease;
       }
-      .suggestions button:hover { border-color: var(--primary); }
+      .suggestions button:hover, .suggestions button:focus { 
+        border-color: var(--primary); 
+        outline: 2px solid var(--primary); 
+        outline-offset: 2px;
+      }
 
       .messages { padding: 16px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
       .msg { display: flex; gap: 8px; align-items: flex-start; }
@@ -59,15 +64,58 @@
       .msg.user .avatar { display: none; }
 
       .input {
-        display: grid; grid-template-columns: 1fr auto; gap: 8px; padding: 12px; border-top: 1px solid var(--border); background: #fafafa;
+        display: grid; grid-template-columns: 1fr auto auto; gap: 8px; padding: 12px; border-top: 1px solid var(--border); background: #fafafa;
       }
       .input input {
         width: 100%; padding: 12px; border-radius: 10px; border: 1px solid var(--border); font-size: 1rem;
+        transition: border-color 0.2s ease;
+      }
+      .input input:focus {
+        outline: none;
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
       }
       .input button {
         padding: 12px 16px; border-radius: 10px; border: 1px solid var(--primary); background: var(--primary); color: #fff; font-weight: 600; cursor: pointer;
+        transition: all 0.2s ease;
       }
-      .input button:hover { background: var(--primary-700); border-color: var(--primary-700); }
+      .input button:hover, .input button:focus { 
+        background: var(--primary-700); 
+        border-color: var(--primary-700);
+        outline: 2px solid var(--primary);
+        outline-offset: 2px;
+      }
+      .input button:disabled {
+        background: var(--muted);
+        border-color: var(--muted);
+        cursor: not-allowed;
+        opacity: 0.6;
+      }
+
+      /* Responsive improvements */
+      @media (max-width: 640px) {
+        .app {
+          margin: 12px; padding: 12px;
+        }
+        .chat {
+          min-height: 400px;
+        }
+        .suggestions {
+          gap: 6px; padding: 10px;
+        }
+        .suggestions button {
+          font-size: .85rem; padding: 6px 8px;
+        }
+        .input {
+          gap: 6px; padding: 10px;
+        }
+        .input input, .input button {
+          padding: 10px 12px; font-size: .9rem;
+        }
+        header h1 {
+          font-size: 1.1rem;
+        }
+      }
 
       footer { text-align: center; color: var(--muted); font-size: .85rem; margin-top: 10px; }
       footer a { color: var(--primary-700); text-decoration: none; }
@@ -87,13 +135,18 @@
         <div class="suggestions" id="suggestions"></div>
         <div class="messages" id="messages" aria-live="polite"></div>
         <div class="input">
-          <input id="prompt" type="text" placeholder="Escribe tu pregunta... (Ej.: ¿Quién es el Urku Yaya?)" autocomplete="off" maxlength="1000" />
-          <button id="send">Enviar</button>
+          <input id="prompt" type="text" placeholder="Escribe tu pregunta... (Ej.: ¿Quién es el Urku Yaya?)" autocomplete="off" maxlength="1000" aria-label="Escriba su pregunta aquí" />
+          <button id="clear" type="button" title="Limpiar chat (Ctrl+L)" aria-label="Limpiar conversación" style="background: var(--muted); border-color: var(--muted); margin-right: 4px;">🗑️</button>
+          <button id="send" type="button" aria-label="Enviar mensaje">Enviar</button>
         </div>
       </section>
 
       <footer>
         <span>Este bot es una guía cultural basada en contenido del proyecto. No ofrece respuestas oficiales ni religiosas.</span>
+        <br>
+        <small style="color: var(--muted); font-size: .75rem; margin-top: 6px; display: block;">
+          💡 Atajos: Ctrl+K (enfocar entrada) • Ctrl+L (limpiar chat) • ↑/↓ (navegar sugerencias) • Esc (limpiar entrada)
+        </small>
       </footer>
     </div>
 
