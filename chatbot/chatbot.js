@@ -295,6 +295,11 @@ function send() {
     return;
   }
   
+  // Disable send button temporarily to prevent spam
+  const sendBtn = el('send');
+  sendBtn.disabled = true;
+  sendBtn.textContent = 'Enviando...';
+  
   addMessage('user', text);
   input.value = '';
 
@@ -308,6 +313,10 @@ function send() {
       loadingMsg.parentNode.removeChild(loadingMsg);
     }
     
+    // Re-enable send button
+    sendBtn.disabled = false;
+    sendBtn.textContent = 'Enviar';
+    
     // Comando para mostrar imagen simbólica
     if (/^muestra el simbolo|muestra el símbolo|ver simbolo|ver símbolo/i.test(text)) {
       addMessage('bot', '', true); // true indicates symbol display
@@ -315,6 +324,9 @@ function send() {
       const ans = findAnswer(text);
       addMessage('bot', ans);
     }
+    
+    // Focus back to input for convenience
+    input.focus();
   }, 300);
 }
 
