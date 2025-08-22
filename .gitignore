@@ -1,0 +1,27 @@
+# Archivos temporales
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# Logs y debug
+*.log
+debug.log
+
+# Directorios de dependencias (si se añaden en el futuro)
+node_modules/
+vendor/
+
+# Archivos de configuración del IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de sistema
+*~
+
+# Archivos de prueba temporal
+/tmp/
+test_*.html
+test_*.js

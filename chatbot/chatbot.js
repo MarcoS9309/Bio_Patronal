@@ -1,5 +1,5 @@
 // Chatbot comunitario sencillo basado en reglas
-// Fuente de conocimiento: resumida desde Introduccion.md
+// Fuente de conocimiento: resumida desde Relato.md y El_relato_de_Mateo.md
 
 const knowledge = [
   {
@@ -75,6 +75,31 @@ Hecha de bahareque y madera, construida por el abuelo Manuel. Para Mateo no es s
     q: "¿Por qué Mateo quiere salvar la Casa de los Abuelos?",
     a: `Porque allí habitan su memoria y sus raíces: el fogón, la lluvia en las tejas, las risas de infancia.
 Decide arreglar techo, reforzar paredes y cambiar tablas, como hizo el abuelo: no es una ruina, es una raíz que no debe olvidarse.`
+  },
+  {
+    tags: [
+      "ayuda", "comandos", "como", "usar", "bot", "chatbot", "guía", "instrucciones"
+    ],
+    q: "¿Cómo usar este chatbot?",
+    a: `¡Hola! Puedes preguntarme sobre las leyendas y tradiciones de Jerusalén/Patacorral.
+
+🔍 **Formas de preguntar:**
+• Haz clic en los botones de sugerencias
+• Escribe preguntas como "¿Quién es...?" o "¿Qué significa...?"
+• Usa "Muestra el símbolo" para ver el símbolo cultural
+
+⌨️ **Atajos de teclado:**
+• Ctrl+K: Enfocar entrada
+• Ctrl+L: Limpiar chat
+• Flechas: Navegar sugerencias
+• Esc: Limpiar entrada
+
+📚 **Temas disponibles:**
+• Urku Yaya (Abuelo de la Montaña)
+• Padre Rumi (memoria ancestral)
+• Señor de Jerusalén (devoción comunitaria)
+• Casa de los Abuelos (historia de Mateo)
+• Propósito del proyecto`
   }
 ];
 
@@ -88,7 +113,8 @@ const suggestions = [
   "¿Cuál es el propósito de este proyecto?",
   "¿Qué es la Casa de los Abuelos?",
   "¿Por qué Mateo quiere salvar la Casa de los Abuelos?",
-  "Muestra el símbolo (cruz y colores)"
+  "Muestra el símbolo (cruz y colores)",
+  "¿Cómo usar este chatbot?"
 ];
 
 function normalize(text) {
@@ -101,8 +127,21 @@ function normalize(text) {
     .trim();
 }
 
+function sanitizeInput(input) {
+  // Remove any potentially dangerous characters
+  return input
+    .replace(/<[^>]*>/g, '') // Remove HTML tags
+    .replace(/javascript:/gi, '') // Remove javascript: protocol
+    .replace(/data:/gi, '') // Remove data: protocol
+    .replace(/vbscript:/gi, '') // Remove vbscript: protocol
+    .trim();
+}
+
 function findAnswer(input) {
-  const qn = normalize(input);
+  // Sanitize input before processing
+  const sanitizedInput = sanitizeInput(input);
+  const qn = normalize(sanitizedInput);
+  
   // Match by tag presence and simple keyword score
   let best = { score: 0, item: null };
   for (const item of knowledge) {
@@ -116,13 +155,73 @@ function findAnswer(input) {
     if (qn.includes(normalize(item.q))) return item.a;
   }
 
-  return `No tengo una respuesta exacta todavía. Puedo hablar de Urku Yaya, el Padre Rumi, el Señor de Jerusalén, Patacorral y el propósito del proyecto.
-Prueba con una de las sugerencias arriba.`;
+  return `🤔 No tengo una respuesta exacta para esa pregunta todavía.
+
+📚 **Puedo ayudarte con:**
+• Urku Yaya (Abuelo de la Montaña)
+• Padre Rumi (memoria ancestral de la piedra)
+• Señor de Jerusalén (devoción comunitaria)
+• Patacorral (significado del nombre)
+• Casa de los Abuelos (historia de Mateo)
+• Propósito del proyecto
+
+💡 **Sugerencias:**
+• Usa las preguntas de arriba
+• Pregunta "¿Cómo usar este chatbot?" para más ayuda
+• Intenta reformular tu pregunta con palabras clave como "Urku Yaya", "Señor de Jerusalén", etc.`;
 }
 
 function el(id) { return document.getElementById(id); }
 
-function addMessage(role, text, isHtml = false) {
+// Sanitize HTML content to prevent XSS attacks
+function sanitizeHtml(html) {
+  const tempDiv = document.createElement('div');
+  tempDiv.textContent = html;
+  return tempDiv.innerHTML;
+}
+
+// Safe function to create image element for symbol display
+function createSymbolImage() {
+  const figure = document.createElement('figure');
+  figure.style.margin = '0';
+  
+  const img = document.createElement('img');
+  img.src = './assets/simbolo-cruz-escalera.svg';
+  img.alt = 'Símbolo: cruz-escalera y colores';
+  img.style.maxWidth = '100%';
+  img.style.height = 'auto';
+  img.style.borderRadius = '8px';
+  img.style.border = '1px solid #e5e7eb';
+  
+  // Add error handling for image loading
+  img.addEventListener('error', () => {
+    figure.innerHTML = `
+      <div style="padding: 20px; text-align: center; background: #f3f4f6; border-radius: 8px; border: 1px solid #e5e7eb;">
+        <p style="margin: 0; color: #6b7280;">⚠️ No se pudo cargar la imagen del símbolo</p>
+        <p style="margin: 8px 0 0 0; font-size: 0.9em; color: #9ca3af;">Cruz-escalera: unión cielo-tierra</p>
+      </div>
+    `;
+  });
+  
+  // Add loading state
+  img.addEventListener('load', () => {
+    img.style.opacity = '1';
+  });
+  img.style.opacity = '0';
+  img.style.transition = 'opacity 0.3s ease';
+  
+  const figcaption = document.createElement('figcaption');
+  figcaption.style.color = '#6b7280';
+  figcaption.style.fontSize = '.9rem';
+  figcaption.style.marginTop = '6px';
+  figcaption.textContent = 'Cruz-escalera (unión cielo-tierra). Verde: campos; Azul: fe; Rojo: ancestros.';
+  
+  figure.appendChild(img);
+  figure.appendChild(figcaption);
+  return figure;
+}
+
+function addMessage(role, text, isSymbol = false) {
   const wrap = document.createElement('div');
   wrap.className = `msg ${role}`;
   if (role === 'bot') {
@@ -138,25 +237,48 @@ function addMessage(role, text, isHtml = false) {
   }
   const bubble = document.createElement('div');
   bubble.className = 'bubble';
-  if (isHtml) {
-    bubble.innerHTML = text;
+  
+  if (isSymbol) {
+    // Safely append the symbol image
+    bubble.appendChild(createSymbolImage());
   } else {
+    // Always use textContent to prevent XSS
     bubble.textContent = text;
   }
+  
   wrap.appendChild(bubble);
   el('messages').appendChild(wrap);
   el('messages').scrollTop = el('messages').scrollHeight;
+  
+  // Return the wrapper element for potential removal (loading states)
+  return wrap;
 }
 
 function renderSuggestions() {
   const bar = el('suggestions');
   bar.innerHTML = '';
-  for (const s of suggestions) {
+  for (let i = 0; i < suggestions.length; i++) {
+    const s = suggestions[i];
     const btn = document.createElement('button');
     btn.textContent = s;
+    btn.type = 'button';
+    btn.setAttribute('aria-label', `Seleccionar pregunta: ${s}`);
     btn.addEventListener('click', () => {
       el('prompt').value = s;
       send();
+    });
+    // Add keyboard navigation support
+    btn.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight' && i < suggestions.length - 1) {
+        bar.children[i + 1].focus();
+        e.preventDefault();
+      } else if (e.key === 'ArrowLeft' && i > 0) {
+        bar.children[i - 1].focus();
+        e.preventDefault();
+      } else if (e.key === 'ArrowDown') {
+        el('prompt').focus();
+        e.preventDefault();
+      }
     });
     bar.appendChild(btn);
   }
@@ -165,36 +287,98 @@ function renderSuggestions() {
 function send() {
   const input = el('prompt');
   const text = input.value.trim();
+  
+  // Input validation: limit length and check for potentially dangerous content
   if (!text) return;
+  if (text.length > 1000) {
+    addMessage('bot', 'Por favor, escribe una pregunta más corta (máximo 1000 caracteres).');
+    return;
+  }
+  
+  // Disable send button temporarily to prevent spam
+  const sendBtn = el('send');
+  sendBtn.disabled = true;
+  sendBtn.textContent = 'Enviando...';
+  
   addMessage('user', text);
   input.value = '';
 
+  // Add loading indicator
+  const loadingMsg = addMessage('bot', '⏳ Pensando...');
+
   // Simular respuesta
   setTimeout(() => {
+    // Remove loading message
+    if (loadingMsg && loadingMsg.parentNode) {
+      loadingMsg.parentNode.removeChild(loadingMsg);
+    }
+    
+    // Re-enable send button
+    sendBtn.disabled = false;
+    sendBtn.textContent = 'Enviar';
+    
     // Comando para mostrar imagen simbólica
     if (/^muestra el simbolo|muestra el símbolo|ver simbolo|ver símbolo/i.test(text)) {
-      const imgHtml = `
-        <figure style="margin:0;">
-          <img src="./assets/simbolo-cruz-escalera.svg" alt="Símbolo: cruz-escalera y colores" style="max-width:100%;height:auto;border-radius:8px;border:1px solid #e5e7eb;" />
-          <figcaption style="color:#6b7280;font-size:.9rem;margin-top:6px;">
-            Cruz-escalera (unión cielo-tierra). Verde: campos; Azul: fe; Rojo: ancestros.
-          </figcaption>
-        </figure>`;
-      addMessage('bot', imgHtml, true);
+      addMessage('bot', '', true); // true indicates symbol display
     } else {
       const ans = findAnswer(text);
       addMessage('bot', ans);
     }
+    
+    // Focus back to input for convenience
+    input.focus();
   }, 300);
 }
 
 function init() {
   renderSuggestions();
   addMessage('bot', '¡Hola! Soy el bot comunitario. Puedo hablar de Urku Yaya, Padre Rumi, el Señor de Jerusalén, Patacorral y la Casa de los Abuelos.');
+  
+  // Add event listeners
   el('send').addEventListener('click', send);
+  el('clear').addEventListener('click', clearChat);
+  
   el('prompt').addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') send();
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      send();
+    } else if (e.key === 'ArrowUp') {
+      // Focus on last suggestion button
+      const suggestions = el('suggestions').children;
+      if (suggestions.length > 0) {
+        suggestions[suggestions.length - 1].focus();
+        e.preventDefault();
+      }
+    } else if (e.key === 'Escape') {
+      // Clear input
+      el('prompt').value = '';
+      e.preventDefault();
+    }
   });
+  
+  // Add global keyboard shortcuts
+  document.addEventListener('keydown', (e) => {
+    // Ctrl/Cmd + K to focus input
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      el('prompt').focus();
+    }
+    // Ctrl/Cmd + L to clear chat
+    else if ((e.ctrlKey || e.metaKey) && e.key === 'l') {
+      e.preventDefault();
+      clearChat();
+    }
+  });
+  
+  // Focus input initially
+  el('prompt').focus();
+}
+
+// Add function to clear chat
+function clearChat() {
+  const messages = el('messages');
+  messages.innerHTML = '';
+  addMessage('bot', '¡Hola! Soy el bot comunitario. Puedo hablar de Urku Yaya, Padre Rumi, el Señor de Jerusalén, Patacorral y la Casa de los Abuelos.');
 }
 
 document.addEventListener('DOMContentLoaded', init);
