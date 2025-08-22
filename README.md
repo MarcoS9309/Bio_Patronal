@@ -27,6 +27,12 @@ El proyecto explora tres pilares fundamentales de nuestra herencia espiritual y 
 - Testimonios de los guardianes de la memoria
 - La fe encarnada en Patacorral y su significado comunitario
 
+#### 👩 **El Relato de María** (*Un Testimonio de Identidad y Pertenencia*)
+- Búsqueda personal de las raíces cañaris
+- El reencuentro con la roca sagrada del patrono
+- Testimonio contemporáneo de conexión espiritual
+- La preservación cultural a través del arte y la escritura
+
 ### 🎯 **Propósito**
 
 Este proyecto no es solo documentación histórica, sino:
@@ -38,7 +44,9 @@ Este proyecto no es solo documentación histórica, sino:
 ### 📚 **Navegación**
 
 Para leer el contenido completo, consulta:
-- **[Introducción.md](./Introduccion.md)** - Relatos completos y narrativas detalladas
+- **[Introducción.md](./Introduccion.md)** - Contexto y marco general del proyecto
+- **[Relato.md](./Relato.md)** - La Leyenda del Urku Yaya (El Abuelo de la Montaña)
+- **[El_relato_de_Maria.md](./El_relato_de_Maria.md)** - Testimonio personal de búsqueda identitaria
 
 ---
 
