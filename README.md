@@ -65,6 +65,7 @@ Este proyecto no es solo documentación histórica, sino:
 #### 👤 **Testimonios Personales**
 - **[El_relato_de_Maria.md](./El_relato_de_Maria.md)** - Testimonio personal de búsqueda identitaria
 - **[El_relato_de_Mateo.md](./El_relato_de_Mateo.md)** - Testimonio personal sobre el Señor de Jerusalén
+- **[Un_comentario_Colectivo.md](./Un_comentario_Colectivo.md)** - Reflexión sobre emigración y retorno comunitario
 
 #### 🤖 **Herramientas Interactivas**
 - **[Chatbot Comunitario](./chatbot/)** - Guía interactiva para explorar el contenido
