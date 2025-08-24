@@ -7,7 +7,7 @@ Este repositorio contiene una colección de relatos biográficos y leyendas ance
 
 ### 🌄 Contenido Principal
 
-El proyecto explora cinco pilares fundamentales de nuestra herencia espiritual y cultural:
+El proyecto explora seis pilares fundamentales de nuestra herencia espiritual y cultural:
 
 #### 🏔️ **La Leyenda del Urku Yaya** (*El Abuelo de la Montaña*)
 - Relatos del cazador solitario y guardián de los secretos ancestrales
@@ -38,6 +38,12 @@ El proyecto explora cinco pilares fundamentales de nuestra herencia espiritual y
 - El reencuentro con la roca sagrada del patrono
 - Testimonio contemporáneo de conexión espiritual
 - La preservación cultural a través del arte y la escritura
+
+#### 🎭 **Teatro Comunitario** (*La Revitalización de la Memoria a Través del Arte*)
+- Representaciones escénicas de las leyendas ancestrales
+- Participación intergeneracional en la preservación cultural
+- Adaptaciones teatrales de los relatos tradicionales
+- Herramienta pedagógica para la transmisión de valores comunitarios
 
 ### 🎯 **Propósito**
 
@@ -73,6 +79,12 @@ Este proyecto no es solo documentación histórica, sino:
   - Preguntas frecuentes automatizadas
   - Exploración guiada de las leyendas
   - **🆕 Nuevas funciones**: Atajos de teclado, diseño responsive, mejor accesibilidad
+
+#### 🎭 **Expresión Artística**
+- **[Teatro_Comunitario.md](./Teatro_Comunitario.md)** - Obras teatrales basadas en las leyendas
+  - "El Cazador del Urku Yaya" - Drama místico en 3 actos
+  - Guías de producción y elementos escénicos
+  - Adaptaciones para diferentes audiencias
 
 ---
 
