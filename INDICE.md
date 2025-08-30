@@ -9,9 +9,9 @@
 *El Abuelo de la Montaña*
 - [El Cazador Solitario](./Relato.md#el-cazador-solitario)
 - [El Aro Misterioso](./Relato.md#el-aro-misterioso)
-- [La Desaparición](./Relato.md#la-desaparición)
+- [La Desaparición](./Relato.md#la-desaparicion)
 - [El Testimonio del Abuelo](./Relato.md#el-testimonio-del-abuelo)
-- [Las Palabras del Corazón](./Relato.md#las-palabras-del-corazón)
+- [Las Palabras del Corazón](./Relato.md#las-palabras-del-corazon)
 - [El Retorno Profetizado](./Relato.md#el-retorno-profetizado)
 - [El Mito Eterno](./Relato.md#el-mito-eterno)
 
@@ -22,12 +22,12 @@
 - [El Eco Viviente](./Relato.md#el-eco-viviente)
 - [La Voz de la Piedra](./Relato.md#la-voz-de-la-piedra)
 
-### ✟ [El Señor de Jerusalén](./Relato.md#el-señor-de-jerusalén)
+### ✟ [El Señor de Jerusalén](./Relato.md#el-senor-de-jerusalen)
 *El Cimiento de Nuestra Fe Comunitaria*
 - [La Fe que Trasciende](./Relato.md#la-fe-que-trasciende)
 - [Los Guardianes de la Memoria](./Relato.md#los-guardianes-de-la-memoria)
 - [Patacorral: al pie de la loma](./Relato.md#patacorral-al-pie-de-la-loma)
-- [La parroquia "Jerusalén": un nombre nacido del pueblo](./Relato.md#la-parroquia-jerusalén-un-nombre-nacido-del-pueblo)
+- [La parroquia "Jerusalén": un nombre nacido del pueblo](./Relato.md#la-parroquia-jerusalen-un-nombre-nacido-del-pueblo)
 - [La imagen hallada en la vertiente](./Relato.md#la-imagen-hallada-en-la-vertiente)
 - [El mensaje para la comunidad](./Relato.md#el-mensaje-para-la-comunidad)
 - [Extractos del pensamiento colectivo](./Relato.md#extractos-del-pensamiento-colectivo)
@@ -36,11 +36,14 @@
 *El Ancla de la Familia en las Colinas de Biblián*
 - [Ecos del Pasado](./Relato.md#ecos-del-pasado)
 - [El Consejo de los Vecinos](./Relato.md#el-consejo-de-los-vecinos)
-- [La Decisión del Corazón](./Relato.md#la-decisión-del-corazón)
+- [La Decisión del Corazón](./Relato.md#la-decision-del-corazon)
 
 ---
 
 ## 👤 **Testimonios Personales**
+
+### [El Relato de María](./El_relato_de_Maria.md)
+*Un Testimonio de Búsqueda Identitaria y Conexión Espiritual*
 
 ### [El Relato de Mateo](./El_relato_de_Mateo.md)
 *Memoria personal sobre el Señor de Jerusalén*
@@ -48,11 +51,14 @@
 - La esperanza del regreso
 - Reflexiones sobre la fe
 
+### [Un comentario colectivo](./Un_comentario_Colectivo.md)
+*Reflexión sobre emigración y retorno comunitario*
+
 ---
 
 ## 🎯 **Propósito del Proyecto**
 
-### [Declaración de Propósito](./Relato.md#declaración-de-propósito)
+### [Declaración de Propósito](./Relato.md#declaracion-de-proposito)
 *El Umbral de un Viaje Ancestral*
 
 ---

@@ -49,7 +49,7 @@ La veneración al Señor de Jerusalén no solo es espiritual, sino también un a
 
 ## El Hallazgo del Señor de Jerusalén
 
-Según mis vecinos, el Señor de Jerusalén fue hallado en un río y trasladado a un pequeño pueblo llamado "Pata Corral", que es mi propia comunidad. Con el paso de los años, me he dado cuenta de que mi origen está aquí, aunque todavía me cuesta asimilarlo.
+Según mis vecinos, el Señor de Jerusalén fue hallado en un río y trasladado a un pequeño pueblo llamado "Patacorral", que es mi propia comunidad. Con el paso de los años, me he dado cuenta de que mi origen está aquí, aunque todavía me cuesta asimilarlo.
 
 ## La Fe como Fundamento Comunitario
 
