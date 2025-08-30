@@ -92,8 +92,6 @@ He llegado a pensar que esa aparente incoherencia no es un error, sino **la úni
 # El Señor de Jerusalén
 ## *El Cimiento de Nuestra Fe Comunitaria*
 
-### Introducción
-
 ## La Fe que Trasciende
 
 Y al sumergirme en ese llamado de la piedra, emerge en mi memoria, como un arroyo que brota de la misma roca, otra figura que nos define: **El Señor de Jerusalén**. He escuchado incontables relatos en mi vida, pero el suyo me parece el más inspirador, porque no se detiene en el mito; se convierte en el origen de nuestra creencia comunitaria, en el cimiento invisible de nuestros valores y nuestra integridad. 
@@ -118,8 +116,6 @@ La gente más joven quizá no lo sepa, pero el nombre de nuestra parroquia, **Je
 
 Querían que el mundo supiera que este pedacito de tierra era una **Nueva Jerusalén**, un lugar de fe. La parroquia surgió de ese compromiso: de una unión que buscaba futuro sin olvidar el alma del pasado.
 
-### Nudo
-
 ## La imagen hallada en la vertiente
 
 Nadie sabe a ciencia cierta cómo llegó la imagen del Señor a Patacorral. La historia escrita calla; por eso habla la memoria. Mi abuelo contaba lo que a él le contó su abuelo, con respeto y en susurros. Esta es la crónica del hallazgo:
@@ -128,8 +124,6 @@ Nadie sabe a ciencia cierta cómo llegó la imagen del Señor a Patacorral. La h
 - La llevaron en procesión a la capilla más cercana, celebrando la bendición.
 - Al día siguiente, la imagen ya no estaba.
 - Alguien propuso volver a la vertiente: allí estaba de nuevo, en el mismo sitio, mirando hacia las casas de Patacorral.
-
-### Desenlace
 
 ## El mensaje para la comunidad
 
@@ -162,8 +156,6 @@ El pueblo entendió el signo: el Señor no quería un altar impuesto, sino el lu
 # La Casa de los Abuelos
 ## *El ancla de la familia en las colinas de Biblián*
 
-### Introducción
-
 La casa de los abuelos. Así la llamaba Mateo, aunque ya nadie vivía en ella. Se alzaba sobre sus zancos de madera, como un viejo animal cansado, mirando hacia las colinas verdes y ondulantes de Biblián. El cielo, cargado de nubes grises, parecía llorar por ella.
 
 ## Ecos del Pasado
@@ -172,15 +164,11 @@ Cada vez que regresaba de la ciudad, Mateo sentía la necesidad de caminar por e
 
 La pared, una mezcla de bahareque y madera que ahora se desmoronaba, guardaba más historias que cualquier libro. Recordaba el olor a tierra húmeda y a leña quemada que siempre impregnaba el aire. En la abertura del segundo piso, como un fantasma en su puesto, aún estaba la pequeña silla donde su abuelo Manuel se sentaba cada tarde. Desde allí, con la mirada perdida en su sembrío de maíz y papas, juzgaba el clima y decidía el trabajo del día siguiente.
 
-### Nudo
-
 ## El Consejo de los Vecinos
 
 Los vecinos le habían dicho a Mateo que la derribara. "Ya no sirve, Mateo. Es un peligro", le aconsejaban. Pero para él, no era solo una estructura. Era el ancla de su familia. Su abuelo la había construido con sus propias manos, mezclando el lodo con paja y clavando cada tabla de eucalipto. En esa casa habían nacido sus tíos, había llorado su madre y había soñado él mismo con mundos lejanos que, irónicamente, ahora le parecían vacíos.
 
 Mientras el viento silbaba a través de las tejas rotas, Mateo se imaginó el calor del fogón, el sabor del mote recién cocido y la seguridad de estar bajo ese techo. La casa estaba herida, sí. El tiempo y el abandono la habían golpeado sin piedad. Pero no estaba muerta.
-
-### Desenlace
 
 ## La Decisión del Corazón
 

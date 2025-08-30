@@ -1,3 +1,6 @@
+# El Relato de Mateo
+## *Memoria personal sobre el Señor de Jerusalén*
+
 ## El origen según mi abuelo
 
 Cuando estuve en los campos, mi abuelito me contaba sobre el origen de nuestro patrono. Me decía que el "Señor de Jerusalén" había sido encontrado en un río por un vecino del pueblo. Como eran personas humildes, me explicaba que era imposible guardar la piedra sagrada en sus hogares, ya que los "patrones" se la llevarían. No entendía con exactitud de qué se trataba todo aquello, pero mi abuelo también me hablaba sobre la fe profunda que existía en nuestra comunidad.
